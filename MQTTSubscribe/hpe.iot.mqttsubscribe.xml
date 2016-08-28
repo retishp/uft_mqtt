@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource type="Activity" id="hpe.iot.mqttsubscribe" version="1.0.0" group="Internet of Things (IoT)" shortName="MQTTSubscribe" description="" assembly="MQTTSubscribeProject.dll" className="MQTTSubscribeProject.MQTTSubscribe" image="MQTT_Subscribe.png" visible="true" draggable="true" xmlns="http://hp.vtd.schemas/signature/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hp.vtd.schemas/signature/v1.0 ../../../dat/schemas/Signature.xsd">
+  <Section name="GeneralProperties" displayName="General Properties">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Name" type="xs:string" types:destination="false" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="InputProperties" isSharedMetaData="true" displayName="Input">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="MQTTBroker" type="xs:string" types:displayName="MQTT Broker URL">
+              <xs:annotation>
+                <xs:documentation>MQTT Broker URL. For example: test.mosquitto.org</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="MQTTUsername" type="xs:string" types:displayName="Username">
+              <xs:annotation>
+                <xs:documentation>Username to authenticate against MQTT broker</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="MQTTPassword" type="xs:string" types:displayName="Password">
+              <xs:annotation>
+                <xs:documentation>Password to authenticate against MQTT broker</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="MQTTTopic" type="xs:string" types:displayName="Topic">
+              <xs:annotation>
+                <xs:documentation>Topic to subscribe in the broker</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="OutputProperties" source="true" dest="true" checkPoint="true" displayName="Checkpoints">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="MQTTMessage" type="xs:string" types:displayName="Message">
+              <xs:annotation>
+                <xs:documentation>Received message</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="Alerts"></Section>
+</Resource>

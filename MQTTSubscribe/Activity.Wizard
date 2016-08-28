@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ActivityGeneratorSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TargetPath>C:\Retish\MQTTSubscribe</TargetPath>
+  <ActivityClassName>MQTTSubscribe</ActivityClassName>
+  <AssemblyName>MQTTSubscribeProject</AssemblyName>
+  <ProjectSettings>
+    <TargetFolder>C:\Retish\MQTTSubscribe\SourceCode</TargetFolder>
+    <AssemblyName>MQTTSubscribeProject</AssemblyName>
+    <OutputPath>C:\Retish\MQTTSubscribe</OutputPath>
+    <ActivityClassName>MQTTSubscribe</ActivityClassName>
+    <ActivityClassFileName>MQTTSubscribeProject.cs</ActivityClassFileName>
+    <ActivityPartialClassFileName>MQTTSubscribeProject.Properties.cs</ActivityPartialClassFileName>
+    <ProjectFileName>MQTTSubscribeProject.csproj</ProjectFileName>
+    <SolutionFileName>MQTTSubscribeProject.sln</SolutionFileName>
+    <ProjectNamespace>MQTTSubscribeProject</ProjectNamespace>
+  </ProjectSettings>
+  <JavaProjectSettings>
+    <TargetFolder>C:\Retish\MQTTSubscribe\hp\custom\java\activity</TargetFolder>
+    <IsActive>false</IsActive>
+  </JavaProjectSettings>
+  <SignatureSettings>
+    <Type>Activity</Type>
+    <ID>hpe.iot.mqttsubscribe</ID>
+    <Version>1.0.0</Version>
+    <Group>IoT</Group>
+    <DisplayName>MQTTSubscribe</DisplayName>
+    <Description>Activity to subscribe to MQTT messages</Description>
+    <RunTimeAssembly>MQTTSubscribeProject.dll</RunTimeAssembly>
+    <RunTimeClass>MQTTSubscribeProject.MQTTSubscribe</RunTimeClass>
+    <IconPath>MQTT_Subscribe.png</IconPath>
+    <Visible>true</Visible>
+    <Draggable>true</Draggable>
+  </SignatureSettings>
+  <SignatureProperties>
+    <Property>
+      <Section>InputProperties</Section>
+      <Name>MQTTBroker</Name>
+      <DisplayName>MQTT Broker URL</DisplayName>
+      <Type>String</Type>
+      <Description>MQTT Broker URL. For example: test.mosquitto.org</Description>
+      <IsArray>false</IsArray>
+      <MultiLine>false</MultiLine>
+      <Visible>true</Visible>
+      <ReadOnly>false</ReadOnly>
+      <CheckPoint>false</CheckPoint>
+      <Source>true</Source>
+      <Dest>true</Dest>
+      <Masked>false</Masked>
+      <Report>true</Report>
+    </Property>
+    <Property>
+      <Section>InputProperties</Section>
+      <Name>MQTTUsername</Name>
+      <DisplayName>Username</DisplayName>
+      <Type>String</Type>
+      <Description>Username to authenticate against MQTT broker</Description>
+      <IsArray>false</IsArray>
+      <MultiLine>false</MultiLine>
+      <Visible>true</Visible>
+      <ReadOnly>false</ReadOnly>
+      <CheckPoint>false</CheckPoint>
+      <Source>true</Source>
+      <Dest>true</Dest>
+      <Masked>false</Masked>
+      <Report>true</Report>
+    </Property>
+    <Property>
+      <Section>InputProperties</Section>
+      <Name>MQTTPassword</Name>
+      <DisplayName>Password</DisplayName>
+      <Type>String</Type>
+      <Description>Password to authenticate against MQTT broker</Description>
+      <IsArray>false</IsArray>
+      <MultiLine>false</MultiLine>
+      <Visible>true</Visible>
+      <ReadOnly>false</ReadOnly>
+      <CheckPoint>false</CheckPoint>
+      <Source>true</Source>
+      <Dest>true</Dest>
+      <Masked>false</Masked>
+      <Report>true</Report>
+    </Property>
+    <Property>
+      <Section>InputProperties</Section>
+      <Name>MQTTTopic</Name>
+      <DisplayName>Topic</DisplayName>
+      <Type>String</Type>
+      <Description>Topic to subscribe in the broker</Description>
+      <IsArray>false</IsArray>
+      <MultiLine>false</MultiLine>
+      <Visible>true</Visible>
+      <ReadOnly>false</ReadOnly>
+      <CheckPoint>false</CheckPoint>
+      <Source>true</Source>
+      <Dest>true</Dest>
+      <Masked>false</Masked>
+      <Report>true</Report>
+    </Property>
+    <Property>
+      <Section>OutputProperties</Section>
+      <Name>MQTTMessage</Name>
+      <DisplayName>Message</DisplayName>
+      <Type>String</Type>
+      <Description>Received message</Description>
+      <IsArray>false</IsArray>
+      <MultiLine>false</MultiLine>
+      <Visible>true</Visible>
+      <ReadOnly>false</ReadOnly>
+      <CheckPoint>false</CheckPoint>
+      <Source>true</Source>
+      <Dest>true</Dest>
+      <Masked>false</Masked>
+      <Report>true</Report>
+    </Property>
+  </SignatureProperties>
+</ActivityGeneratorSettings>

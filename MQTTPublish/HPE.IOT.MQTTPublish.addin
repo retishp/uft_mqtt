@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AddIn name="HP Service Test Activitiy" author="HP Activity Generator" version="12.0.0.0">
+  <Manifest>
+    <Identity name="HPE.IOT.MQTTPublish" version="12.0.0.0" />
+  </Manifest>
+  <Runtime>
+    <Import assembly=":HP.ST.Fwk.DesignerModel" />
+  </Runtime>
+  <Path name="/VTD/Activities">
+    <Activity id="HPE.IOT.MQTTPublish" displayName="MQTTPublish" signatureFile="HPE.IOT.MQTTPublish.xml" />
+  </Path>
+</AddIn>

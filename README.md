@@ -1,2 +1,2 @@
-# uft_mqtt_subscribe
-Sample code to create MQTT Subscribe activity for HPE UFT API testing
+# uft_mqtt
+Sample code to create MQTT Publish and Subscribe activities for HPE UFT API testing
